@@ -1,0 +1,952 @@
+{
+  "preference_model": {
+    "transport_weight": 0.5,
+    "catabolism_weight": 0.4,
+    "regulation_weight": 0.1
+  },
+  "pathways": [
+    {
+      "id": "b1_de_novo",
+      "name": "Thiamine (B1) de novo",
+      "category": "vitamin",
+      "essential_steps": [
+        {
+          "id": "thiC_like",
+          "any_of": [
+            "K03147"
+          ]
+        },
+        {
+          "id": "thiD_like",
+          "any_of": [
+            "K00970"
+          ]
+        },
+        {
+          "id": "thiE_like",
+          "any_of": [
+            "K03151"
+          ]
+        }
+      ],
+      "optional_steps": [
+        {
+          "id": "thiL",
+          "any_of": [
+            "K00946"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b1_salvage",
+      "name": "Thiamine salvage/transport",
+      "category": "vitamin",
+      "essential_steps": [
+        {
+          "id": "thiamine_transport",
+          "any_of": [
+            "K02078",
+            "K02079",
+            "K02080",
+            "K14652"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b2_de_novo",
+      "name": "Riboflavin (B2) de novo",
+      "category": "vitamin",
+      "essential_steps": [
+        {
+          "id": "ribA",
+          "any_of": [
+            "K00794"
+          ]
+        },
+        {
+          "id": "ribB",
+          "any_of": [
+            "K11752"
+          ]
+        },
+        {
+          "id": "ribH",
+          "any_of": [
+            "K00793"
+          ]
+        },
+        {
+          "id": "ribE",
+          "any_of": [
+            "K00794",
+            "K19224"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b6_de_novo",
+      "name": "Pyridoxine (B6) de novo",
+      "category": "vitamin",
+      "essential_steps": [
+        {
+          "id": "pdxA",
+          "any_of": [
+            "K03473"
+          ]
+        },
+        {
+          "id": "pdxJ",
+          "any_of": [
+            "K06153"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b7_de_novo",
+      "name": "Biotin (B7) de novo",
+      "category": "vitamin",
+      "essential_steps": [
+        {
+          "id": "bioF",
+          "any_of": [
+            "K00652"
+          ]
+        },
+        {
+          "id": "bioA",
+          "any_of": [
+            "K00833"
+          ]
+        },
+        {
+          "id": "bioD",
+          "any_of": [
+            "K01935"
+          ]
+        },
+        {
+          "id": "bioB",
+          "any_of": [
+            "K01012"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b7_salvage",
+      "name": "Biotin salvage/uptake",
+      "category": "vitamin",
+      "essential_steps": [
+        {
+          "id": "biotin_transport",
+          "any_of": [
+            "K01920",
+            "K10014"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b9_de_novo",
+      "name": "Folate (B9) de novo",
+      "category": "vitamin",
+      "essential_steps": [
+        {
+          "id": "folE",
+          "any_of": [
+            "K01495"
+          ]
+        },
+        {
+          "id": "folB",
+          "any_of": [
+            "K13998"
+          ]
+        },
+        {
+          "id": "folK",
+          "any_of": [
+            "K00950"
+          ]
+        },
+        {
+          "id": "folP",
+          "any_of": [
+            "K00796"
+          ]
+        },
+        {
+          "id": "folC",
+          "any_of": [
+            "K01937"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b12_de_novo",
+      "name": "Cobalamin (B12) de novo",
+      "category": "vitamin",
+      "essential_steps": [
+        {
+          "id": "cobA",
+          "any_of": [
+            "K02232"
+          ]
+        },
+        {
+          "id": "cobI",
+          "any_of": [
+            "K02226"
+          ]
+        },
+        {
+          "id": "cobM",
+          "any_of": [
+            "K02225"
+          ]
+        },
+        {
+          "id": "cobU",
+          "any_of": [
+            "K02233"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aa_ala_biosyn",
+      "name": "Alanine biosynthesis",
+      "category": "amino_acid",
+      "essential_steps": [
+        {
+          "id": "ala",
+          "any_of": [
+            "K00830"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aa_arg_biosyn",
+      "name": "Arginine biosynthesis",
+      "category": "amino_acid",
+      "essential_steps": [
+        {
+          "id": "arg",
+          "any_of": [
+            "K00821"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aa_asn_biosyn",
+      "name": "Asparagine biosynthesis",
+      "category": "amino_acid",
+      "essential_steps": [
+        {
+          "id": "asn",
+          "any_of": [
+            "K01953"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aa_asp_biosyn",
+      "name": "Aspartate biosynthesis",
+      "category": "amino_acid",
+      "essential_steps": [
+        {
+          "id": "asp",
+          "any_of": [
+            "K00812"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aa_cys_biosyn",
+      "name": "Cysteine biosynthesis",
+      "category": "amino_acid",
+      "essential_steps": [
+        {
+          "id": "cys",
+          "any_of": [
+            "K00640"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aa_gln_biosyn",
+      "name": "Glutamine biosynthesis",
+      "category": "amino_acid",
+      "essential_steps": [
+        {
+          "id": "gln",
+          "any_of": [
+            "K01915"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aa_glu_biosyn",
+      "name": "Glutamate biosynthesis",
+      "category": "amino_acid",
+      "essential_steps": [
+        {
+          "id": "glu",
+          "any_of": [
+            "K00284"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aa_gly_biosyn",
+      "name": "Glycine biosynthesis",
+      "category": "amino_acid",
+      "essential_steps": [
+        {
+          "id": "gly",
+          "any_of": [
+            "K00600"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aa_his_biosyn",
+      "name": "Histidine biosynthesis",
+      "category": "amino_acid",
+      "essential_steps": [
+        {
+          "id": "his",
+          "any_of": [
+            "K02502"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aa_ile_biosyn",
+      "name": "Isoleucine biosynthesis",
+      "category": "amino_acid",
+      "essential_steps": [
+        {
+          "id": "ile",
+          "any_of": [
+            "K01652"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aa_leu_biosyn",
+      "name": "Leucine biosynthesis",
+      "category": "amino_acid",
+      "essential_steps": [
+        {
+          "id": "leu",
+          "any_of": [
+            "K01649"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aa_lys_biosyn",
+      "name": "Lysine biosynthesis",
+      "category": "amino_acid",
+      "essential_steps": [
+        {
+          "id": "lys",
+          "any_of": [
+            "K01714"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aa_met_biosyn",
+      "name": "Methionine biosynthesis",
+      "category": "amino_acid",
+      "essential_steps": [
+        {
+          "id": "met",
+          "any_of": [
+            "K00651"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aa_phe_biosyn",
+      "name": "Phenylalanine biosynthesis",
+      "category": "amino_acid",
+      "essential_steps": [
+        {
+          "id": "phe",
+          "any_of": [
+            "K04518"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aa_pro_biosyn",
+      "name": "Proline biosynthesis",
+      "category": "amino_acid",
+      "essential_steps": [
+        {
+          "id": "pro",
+          "any_of": [
+            "K00931"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aa_ser_biosyn",
+      "name": "Serine biosynthesis",
+      "category": "amino_acid",
+      "essential_steps": [
+        {
+          "id": "ser",
+          "any_of": [
+            "K00058"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aa_thr_biosyn",
+      "name": "Threonine biosynthesis",
+      "category": "amino_acid",
+      "essential_steps": [
+        {
+          "id": "thr",
+          "any_of": [
+            "K12524"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aa_trp_biosyn",
+      "name": "Tryptophan biosynthesis",
+      "category": "amino_acid",
+      "essential_steps": [
+        {
+          "id": "trp",
+          "any_of": [
+            "K01695"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aa_tyr_biosyn",
+      "name": "Tyrosine biosynthesis",
+      "category": "amino_acid",
+      "essential_steps": [
+        {
+          "id": "tyr",
+          "any_of": [
+            "K00832"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aa_val_biosyn",
+      "name": "Valine biosynthesis",
+      "category": "amino_acid",
+      "essential_steps": [
+        {
+          "id": "val",
+          "any_of": [
+            "K01652"
+          ]
+        }
+      ]
+    }
+  ],
+  "auxotrophy_factors": [
+    {
+      "id": "thiamine_B1",
+      "de_novo_pathway_id": "b1_de_novo",
+      "salvage_pathway_id": "b1_salvage"
+    },
+    {
+      "id": "riboflavin_B2",
+      "de_novo_pathway_id": "b2_de_novo"
+    },
+    {
+      "id": "pyridoxine_B6",
+      "de_novo_pathway_id": "b6_de_novo"
+    },
+    {
+      "id": "biotin_B7",
+      "de_novo_pathway_id": "b7_de_novo",
+      "salvage_pathway_id": "b7_salvage"
+    },
+    {
+      "id": "folate_B9",
+      "de_novo_pathway_id": "b9_de_novo"
+    },
+    {
+      "id": "cobalamin_B12",
+      "de_novo_pathway_id": "b12_de_novo"
+    }
+  ],
+  "substrate_rules": [
+    {
+      "id": "glucose",
+      "kind": "carbon",
+      "transport_steps": [
+        {
+          "id": "pts_glc",
+          "any_of": [
+            "K02777",
+            "K02778"
+          ]
+        }
+      ],
+      "catabolic_steps": [
+        {
+          "id": "glk",
+          "any_of": [
+            "K00844"
+          ]
+        },
+        {
+          "id": "pfk",
+          "any_of": [
+            "K00850"
+          ]
+        },
+        {
+          "id": "pyk",
+          "any_of": [
+            "K00873"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fructose",
+      "kind": "carbon",
+      "transport_steps": [
+        {
+          "id": "pts_fru",
+          "any_of": [
+            "K02770",
+            "K02771"
+          ]
+        }
+      ],
+      "catabolic_steps": [
+        {
+          "id": "fruK",
+          "any_of": [
+            "K00882"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sucrose",
+      "kind": "carbon",
+      "transport_steps": [
+        {
+          "id": "csc",
+          "any_of": [
+            "K02808"
+          ]
+        }
+      ],
+      "catabolic_steps": [
+        {
+          "id": "inv",
+          "any_of": [
+            "K01193"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lactose",
+      "kind": "carbon",
+      "transport_steps": [
+        {
+          "id": "lacY",
+          "any_of": [
+            "K10112"
+          ]
+        }
+      ],
+      "catabolic_steps": [
+        {
+          "id": "lacZ",
+          "any_of": [
+            "K01190"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "xylose",
+      "kind": "carbon",
+      "transport_steps": [
+        {
+          "id": "xyl",
+          "any_of": [
+            "K10537",
+            "K08187"
+          ]
+        }
+      ],
+      "catabolic_steps": [
+        {
+          "id": "xylA",
+          "any_of": [
+            "K01805"
+          ]
+        },
+        {
+          "id": "xylB",
+          "any_of": [
+            "K00854"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "arabinose",
+      "kind": "carbon",
+      "transport_steps": [
+        {
+          "id": "araE",
+          "any_of": [
+            "K08194"
+          ]
+        }
+      ],
+      "catabolic_steps": [
+        {
+          "id": "araA",
+          "any_of": [
+            "K01804"
+          ]
+        },
+        {
+          "id": "araB",
+          "any_of": [
+            "K00853"
+          ]
+        },
+        {
+          "id": "araD",
+          "any_of": [
+            "K01785"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "glycerol",
+      "kind": "carbon",
+      "passive_diffusion": true,
+      "transport_steps": [
+        {
+          "id": "glpF",
+          "any_of": [
+            "K02437"
+          ]
+        }
+      ],
+      "catabolic_steps": [
+        {
+          "id": "glpK",
+          "any_of": [
+            "K00864"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "acetate",
+      "kind": "carbon",
+      "transport_steps": [
+        {
+          "id": "actP",
+          "any_of": [
+            "K03305"
+          ]
+        }
+      ],
+      "catabolic_steps": [
+        {
+          "id": "acs",
+          "any_of": [
+            "K01895",
+            "K00925"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lactate",
+      "kind": "carbon",
+      "transport_steps": [
+        {
+          "id": "lldP",
+          "any_of": [
+            "K03303"
+          ]
+        }
+      ],
+      "catabolic_steps": [
+        {
+          "id": "lld",
+          "any_of": [
+            "K00101",
+            "K03778"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pyruvate",
+      "kind": "carbon",
+      "transport_steps": [
+        {
+          "id": "btsT",
+          "any_of": [
+            "K11690"
+          ]
+        }
+      ],
+      "catabolic_steps": [
+        {
+          "id": "pdh",
+          "any_of": [
+            "K00161"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "citrate_succinate",
+      "kind": "carbon",
+      "transport_steps": [
+        {
+          "id": "dctA",
+          "any_of": [
+            "K11904",
+            "K07792"
+          ]
+        }
+      ],
+      "catabolic_steps": [
+        {
+          "id": "tca",
+          "any_of": [
+            "K01647"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ammonium",
+      "kind": "nitrogen",
+      "transport_steps": [
+        {
+          "id": "amt",
+          "any_of": [
+            "K03320"
+          ]
+        }
+      ],
+      "catabolic_steps": [
+        {
+          "id": "glnA",
+          "any_of": [
+            "K01915"
+          ]
+        },
+        {
+          "id": "glt",
+          "any_of": [
+            "K00284",
+            "K00285"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nitrate_nitrite",
+      "kind": "nitrogen",
+      "transport_steps": [
+        {
+          "id": "narK",
+          "any_of": [
+            "K02575"
+          ]
+        }
+      ],
+      "catabolic_steps": [
+        {
+          "id": "nasA",
+          "any_of": [
+            "K00372"
+          ]
+        },
+        {
+          "id": "nirA",
+          "any_of": [
+            "K00366"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "urea",
+      "kind": "nitrogen",
+      "transport_steps": [
+        {
+          "id": "urt",
+          "any_of": [
+            "K11959"
+          ]
+        }
+      ],
+      "catabolic_steps": [
+        {
+          "id": "ure",
+          "any_of": [
+            "K01429",
+            "K01430",
+            "K01431"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "amino_acids_mix",
+      "kind": "nitrogen",
+      "transport_steps": [
+        {
+          "id": "aap",
+          "any_of": [
+            "K01998"
+          ]
+        }
+      ],
+      "catabolic_steps": [
+        {
+          "id": "at",
+          "any_of": [
+            "K00812"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nitrogen_fixation",
+      "kind": "nitrogen",
+      "transport_steps": [],
+      "catabolic_steps": [
+        {
+          "id": "nif",
+          "any_of": [
+            "K02588",
+            "K02586",
+            "K02591"
+          ]
+        }
+      ]
+    }
+  ],
+  "metal_rules": [
+    {
+      "id": "iron_fe",
+      "indicative_kos": [
+        "K03549",
+        "K04759",
+        "K02013"
+      ],
+      "message_if_present": "Fe transport/uptake genes detected (potential iron demand and oxidative stress sensitivity context).",
+      "message_if_absent": "No canonical Fe uptake markers detected in current annotation set."
+    },
+    {
+      "id": "manganese_mn",
+      "indicative_kos": [
+        "K03326",
+        "K11709"
+      ],
+      "message_if_present": "Mn transport markers (MntH/MntABC-like) detected."
+    },
+    {
+      "id": "zinc_zn",
+      "indicative_kos": [
+        "K02073",
+        "K02074",
+        "K02075"
+      ],
+      "message_if_present": "Zn uptake system (ZnuABC-like) detected."
+    },
+    {
+      "id": "copper_cu",
+      "indicative_kos": [
+        "K01533",
+        "K07240"
+      ],
+      "message_if_present": "Cu homeostasis genes detected; may indicate copper sensitivity handling."
+    },
+    {
+      "id": "molybdenum_mo",
+      "indicative_kos": [
+        "K02017",
+        "K02018",
+        "K02019",
+        "K03635"
+      ],
+      "message_if_present": "Molybdate transport/MoCo-related evidence detected."
+    },
+    {
+      "id": "nickel_ni",
+      "indicative_kos": [
+        "K02031",
+        "K02032",
+        "K02033"
+      ],
+      "message_if_present": "Nickel uptake genes detected (relevant for urease/hydrogenase systems)."
+    },
+    {
+      "id": "cobalt_co",
+      "indicative_kos": [
+        "K02006",
+        "K02007",
+        "K02008"
+      ],
+      "message_if_present": "Cobalt/cobalamin transport signals detected."
+    },
+    {
+      "id": "selenium_se",
+      "indicative_kos": [
+        "K03652",
+        "K01042"
+      ],
+      "message_if_present": "Selenoprotein machinery markers detected."
+    }
+  ]
+}
