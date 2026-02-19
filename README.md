@@ -54,3 +54,25 @@ genome_nutrition_predictor run \
 ## 说明
 - `kofam` 模式预留接口，当前推荐先使用 `provided_ko` 或来自 eggNOG/DRAM 的 KO 注释结果。
 - 规则来源为通用代谢框架经验规则，适合可解释初筛，不替代实验验证。
+
+
+## 安装故障排查（Windows 常见）
+如果你看到：`does not appear to be a Python project: neither setup.py nor pyproject.toml found`，通常是以下原因之一：
+
+1. 当前目录不是项目根目录（请先确认同级能看到 `pyproject.toml`）。
+2. 你在 GitHub 上下载/切换到了不完整分支（缺少仓库根文件）。
+3. 本地目录名正确但文件未同步（例如只下载了子目录）。
+
+建议执行：
+```powershell
+# 1) 确认在项目根目录
+Get-ChildItem
+
+# 2) 确认关键文件存在
+Test-Path .\pyproject.toml
+Test-Path .\setup.py
+
+# 3) 然后再安装
+python -m pip install -U pip
+pip install -e .
+```
