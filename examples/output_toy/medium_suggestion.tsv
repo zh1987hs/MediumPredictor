@@ -1,0 +1,6 @@
+section	item	reason
+base	M9-like salts + trace elements	default basal medium
+supplement_required	thiamine_B1, riboflavin_B2, pyridoxine_B6, folate_B9, cobalamin_B12	de novo absent
+supplement_possible	none	de novo partial
+carbon_top3	glucose, xylose	transport+catabolism score
+nitrogen_top3	ammonium	transport+catabolism score

@@ -1,0 +1,310 @@
+{
+  "metadata": {
+    "tool": "genome-nutrition-predictor",
+    "version": "0.1.0",
+    "timestamp_utc": "2026-02-19T08:48:36.760039+00:00",
+    "annotation_mode": "provided_ko",
+    "rules_path": "rules/default_rules.yaml",
+    "db_dir": null,
+    "offline": true,
+    "min_completeness_threshold": 0.8,
+    "threads": 1,
+    "num_genes": 19
+  },
+  "auxotrophy": [
+    {
+      "factor": "thiamine_B1",
+      "prediction": "likely required",
+      "de_novo_status": "Absent",
+      "salvage_status": "Absent"
+    },
+    {
+      "factor": "riboflavin_B2",
+      "prediction": "likely required",
+      "de_novo_status": "Absent",
+      "salvage_status": null
+    },
+    {
+      "factor": "pyridoxine_B6",
+      "prediction": "likely required",
+      "de_novo_status": "Absent",
+      "salvage_status": null
+    },
+    {
+      "factor": "biotin_B7",
+      "prediction": "not required",
+      "de_novo_status": "Present",
+      "salvage_status": "Absent"
+    },
+    {
+      "factor": "folate_B9",
+      "prediction": "likely required",
+      "de_novo_status": "Absent",
+      "salvage_status": null
+    },
+    {
+      "factor": "cobalamin_B12",
+      "prediction": "likely required",
+      "de_novo_status": "Absent",
+      "salvage_status": null
+    }
+  ],
+  "capabilities": [
+    {
+      "substrate": "glucose",
+      "kind": "carbon",
+      "capability": true,
+      "preference_score": 1.0,
+      "transport_score": 1.0,
+      "catabolism_score": 1.0,
+      "regulation_score": 1.0,
+      "evidence_gene_ids": [
+        "g10",
+        "g11",
+        "g12",
+        "g13",
+        "g9"
+      ],
+      "evidence_kos": [
+        "K00844",
+        "K00850",
+        "K00873",
+        "K02777",
+        "K02778"
+      ]
+    },
+    {
+      "substrate": "fructose",
+      "kind": "carbon",
+      "capability": false,
+      "preference_score": 0.1,
+      "transport_score": 0.0,
+      "catabolism_score": 0.0,
+      "regulation_score": 1.0,
+      "evidence_gene_ids": [],
+      "evidence_kos": []
+    },
+    {
+      "substrate": "sucrose",
+      "kind": "carbon",
+      "capability": false,
+      "preference_score": 0.1,
+      "transport_score": 0.0,
+      "catabolism_score": 0.0,
+      "regulation_score": 1.0,
+      "evidence_gene_ids": [],
+      "evidence_kos": []
+    },
+    {
+      "substrate": "lactose",
+      "kind": "carbon",
+      "capability": false,
+      "preference_score": 0.1,
+      "transport_score": 0.0,
+      "catabolism_score": 0.0,
+      "regulation_score": 1.0,
+      "evidence_gene_ids": [],
+      "evidence_kos": []
+    },
+    {
+      "substrate": "xylose",
+      "kind": "carbon",
+      "capability": true,
+      "preference_score": 1.0,
+      "transport_score": 1.0,
+      "catabolism_score": 1.0,
+      "regulation_score": 1.0,
+      "evidence_gene_ids": [
+        "g14",
+        "g15",
+        "g16"
+      ],
+      "evidence_kos": [
+        "K00854",
+        "K01805",
+        "K10537"
+      ]
+    },
+    {
+      "substrate": "arabinose",
+      "kind": "carbon",
+      "capability": false,
+      "preference_score": 0.1,
+      "transport_score": 0.0,
+      "catabolism_score": 0.0,
+      "regulation_score": 1.0,
+      "evidence_gene_ids": [],
+      "evidence_kos": []
+    },
+    {
+      "substrate": "glycerol",
+      "kind": "carbon",
+      "capability": false,
+      "preference_score": 0.1,
+      "transport_score": 0.0,
+      "catabolism_score": 0.0,
+      "regulation_score": 1.0,
+      "evidence_gene_ids": [],
+      "evidence_kos": []
+    },
+    {
+      "substrate": "acetate",
+      "kind": "carbon",
+      "capability": false,
+      "preference_score": 0.1,
+      "transport_score": 0.0,
+      "catabolism_score": 0.0,
+      "regulation_score": 1.0,
+      "evidence_gene_ids": [],
+      "evidence_kos": []
+    },
+    {
+      "substrate": "lactate",
+      "kind": "carbon",
+      "capability": false,
+      "preference_score": 0.1,
+      "transport_score": 0.0,
+      "catabolism_score": 0.0,
+      "regulation_score": 1.0,
+      "evidence_gene_ids": [],
+      "evidence_kos": []
+    },
+    {
+      "substrate": "pyruvate",
+      "kind": "carbon",
+      "capability": false,
+      "preference_score": 0.1,
+      "transport_score": 0.0,
+      "catabolism_score": 0.0,
+      "regulation_score": 1.0,
+      "evidence_gene_ids": [],
+      "evidence_kos": []
+    },
+    {
+      "substrate": "citrate_succinate",
+      "kind": "carbon",
+      "capability": false,
+      "preference_score": 0.1,
+      "transport_score": 0.0,
+      "catabolism_score": 0.0,
+      "regulation_score": 1.0,
+      "evidence_gene_ids": [],
+      "evidence_kos": []
+    },
+    {
+      "substrate": "ammonium",
+      "kind": "nitrogen",
+      "capability": true,
+      "preference_score": 1.0,
+      "transport_score": 1.0,
+      "catabolism_score": 1.0,
+      "regulation_score": 1.0,
+      "evidence_gene_ids": [
+        "g5",
+        "g6",
+        "g7",
+        "g8"
+      ],
+      "evidence_kos": [
+        "K00284",
+        "K00285",
+        "K01915",
+        "K03320"
+      ]
+    },
+    {
+      "substrate": "nitrate_nitrite",
+      "kind": "nitrogen",
+      "capability": false,
+      "preference_score": 0.1,
+      "transport_score": 0.0,
+      "catabolism_score": 0.0,
+      "regulation_score": 1.0,
+      "evidence_gene_ids": [],
+      "evidence_kos": []
+    },
+    {
+      "substrate": "urea",
+      "kind": "nitrogen",
+      "capability": false,
+      "preference_score": 0.1,
+      "transport_score": 0.0,
+      "catabolism_score": 0.0,
+      "regulation_score": 1.0,
+      "evidence_gene_ids": [],
+      "evidence_kos": []
+    },
+    {
+      "substrate": "amino_acids_mix",
+      "kind": "nitrogen",
+      "capability": false,
+      "preference_score": 0.1,
+      "transport_score": 0.0,
+      "catabolism_score": 0.0,
+      "regulation_score": 1.0,
+      "evidence_gene_ids": [],
+      "evidence_kos": []
+    },
+    {
+      "substrate": "nitrogen_fixation",
+      "kind": "nitrogen",
+      "capability": false,
+      "preference_score": 0.6,
+      "transport_score": 1.0,
+      "catabolism_score": 0.0,
+      "regulation_score": 1.0,
+      "evidence_gene_ids": [],
+      "evidence_kos": []
+    }
+  ],
+  "metals": [
+    {
+      "factor": "iron_fe",
+      "message": "No canonical Fe uptake markers detected in current annotation set.",
+      "evidence_kos": []
+    },
+    {
+      "factor": "manganese_mn",
+      "message": "No specific evidence",
+      "evidence_kos": []
+    },
+    {
+      "factor": "zinc_zn",
+      "message": "Zn uptake system (ZnuABC-like) detected.",
+      "evidence_kos": [
+        "K02073",
+        "K02074",
+        "K02075"
+      ]
+    },
+    {
+      "factor": "copper_cu",
+      "message": "No specific evidence",
+      "evidence_kos": []
+    },
+    {
+      "factor": "molybdenum_mo",
+      "message": "No specific evidence",
+      "evidence_kos": []
+    },
+    {
+      "factor": "nickel_ni",
+      "message": "No specific evidence",
+      "evidence_kos": []
+    },
+    {
+      "factor": "cobalt_co",
+      "message": "No specific evidence",
+      "evidence_kos": []
+    },
+    {
+      "factor": "selenium_se",
+      "message": "No specific evidence",
+      "evidence_kos": []
+    }
+  ],
+  "pathway_counts": {
+    "Absent": 25,
+    "Present": 3
+  }
+}

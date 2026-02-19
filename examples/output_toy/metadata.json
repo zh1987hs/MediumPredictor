@@ -1,0 +1,12 @@
+{
+  "tool": "genome-nutrition-predictor",
+  "version": "0.1.0",
+  "timestamp_utc": "2026-02-19T08:48:36.760039+00:00",
+  "annotation_mode": "provided_ko",
+  "rules_path": "rules/default_rules.yaml",
+  "db_dir": null,
+  "offline": true,
+  "min_completeness_threshold": 0.8,
+  "threads": 1,
+  "num_genes": 19
+}
